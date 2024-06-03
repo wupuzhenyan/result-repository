@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>查询结果</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #0078d4;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content div {
+            margin-bottom: 10px;
+        }
+        .content div span {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-container button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">查询结果</div>
+    <div class="content">
+        <div><span>考试时间：</span>2024年上半年</div>
+        <div><span>资格名称：</span>系统架构设计师</div>
+        <div><span>准考证号：</span>520103200305261627</div>
+        <div><span>证件号：</span>520103200305261627</div>
+        <div><span>姓名：</span>伍普桢彦</div>
+        <div><span>上午成绩：</span>54.00</div>
+        <div><span>下午成绩：</span>62.00</div>
+        <div><span>论文成绩：</span>53.00</div>
+    </div>
+    <div class="button-container">
+        <button onclick="window.history.back()">返回</button>
+    </div>
+</div>
+</body>
+</html>
