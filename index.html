@@ -36,17 +36,21 @@
         }
         .content div {
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
         }
         .content div span {
             display: inline-block;
             width: 100px;
             font-weight: bold;
+            text-align: right;
         }
         .content div .value {
             display: inline-block;
-            width: 220px;
+            width: calc(100% - 120px);
             border-bottom: 1px solid #dcdcdc;
             padding-bottom: 5px;
+            margin-left: 10px;
         }
         .button-container {
             text-align: center;
