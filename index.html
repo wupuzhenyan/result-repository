@@ -6,6 +6,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
         .container {
             width: 400px;
@@ -13,6 +14,7 @@
             border: 1px solid #dcdcdc;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
             overflow: hidden;
         }
         .header {
@@ -21,6 +23,13 @@
             padding: 10px 20px;
             font-size: 18px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
         }
         .content {
             padding: 20px;
@@ -32,6 +41,12 @@
             display: inline-block;
             width: 100px;
             font-weight: bold;
+        }
+        .content div .value {
+            display: inline-block;
+            width: 220px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 5px;
         }
         .button-container {
             text-align: center;
@@ -48,21 +63,26 @@
     </style>
 </head>
 <body>
+
 <div class="container">
-    <div class="header">查询结果</div>
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Blue_search_icon.svg" alt="查询结果图标">
+        查询结果
+    </div>
     <div class="content">
-        <div><span>考试时间：</span>2024年上半年</div>
-        <div><span>资格名称：</span>系统架构设计师</div>
-        <div><span>准考证号：</span>520103200305261627</div>
-        <div><span>证件号：</span>520103200305261627</div>
-        <div><span>姓名：</span>伍普桢彦</div>
-        <div><span>上午成绩：</span>54.00</div>
-        <div><span>下午成绩：</span>62.00</div>
-        <div><span>论文成绩：</span>53.00</div>
+        <div><span>考试时间：</span><span class="value">2024年上半年</span></div>
+        <div><span>资格名称：</span><span class="value">系统架构师</span></div>
+        <div><span>准考证号：</span><span class="value">520103200305261627</span></div>
+        <div><span>证件号：</span><span class="value">520103200305261627</span></div>
+        <div><span>姓名：</span><span class="value">伍普桢彦</span></div>
+        <div><span>上午成绩：</span><span class="value">54.00</span></div>
+        <div><span>下午成绩：</span><span class="value">62.00</span></div>
+        <div><span>论文成绩：</span><span class="value">53.00</span></div>
     </div>
     <div class="button-container">
         <button onclick="window.history.back()">返回</button>
     </div>
 </div>
+
 </body>
 </html>
