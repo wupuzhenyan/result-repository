@@ -2,90 +2,69 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>查询结果</title>
+    <title>医院病历单</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            line-height: 1.6;
+            margin: 20px;
         }
         .container {
-            width: 400px;
-            margin: 50px auto;
-            border: 1px solid #dcdcdc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            background-color: white;
-            overflow: hidden;
-        }
-        .header {
-            background-color: #0078d4;
-            color: white;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-        .header img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-        .content {
+            max-width: 800px;
+            margin: auto;
             padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
         }
-        .content div {
-            margin-bottom: 10px;
-            display: flex;
-        }
-        .content div span.label {
-            display: inline-block;
-            width: 100px; /* 固定标签宽度 */
-            font-weight: bold;
-            text-align: right;
-            margin-right: 10px; /* 标签与内容之间的间隙 */
-        }
-        .content div span.value {
-            display: inline-block;
-            width: calc(100% - 110px); /* 减去标签宽度和间隙 */
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 5px;
-        }
-        .button-container {
+        h1 {
             text-align: center;
-            margin: 20px 0;
         }
-        .button-container button {
-            background-color: #0078d4;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .list-item {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Blue_search_icon.svg" alt="查询结果图标">
-        查询结果
+    <div class="container">
+        <h1>上海市第一人民医院病历单</h1>
+        <div class="section">
+            <div><span class="section-title">患者姓名：</span>伍普桢彦</div>
+            <div><span class="section-title">性别：</span>女</div>
+            <div><span class="section-title">年龄：</span>21</div>
+            <div><span class="section-title">病历编号：</span>520103200305261627</div>
+            <div><span class="section-title">就诊日期：</span>2024年6月5日</div>
+        </div>
+        <div class="section">
+            <div><span class="section-title">临床诊断：</span>结膜炎</div>
+        </div>
+        <div class="section">
+            <div><span class="section-title">执行科室：</span>眼科</div>
+        </div>
+        <div class="section">
+            <div class="section-title">处置：</div>
+            <div class="list-item">- 泪道冲洗</div>
+            <div class="list-item">- 表面麻醉</div>
+            <div class="list-item">- 泪小点扩张</div>
+        </div>
+        <div class="section">
+            <div class="section-title">处方药物：</div>
+            <div class="list-item">1. 受布霉素地塞米松眼膏</div>
+            <div class="list-item">2. 盐酸氮卓斯汀滴眼液</div>
+            <div class="list-item">3. 普拉洛芬滴眼液</div>
+        </div>
+        <div class="section">
+            <div class="section-title">注意事项：</div>
+            <div class="list-item">- 地塞米松是激素药物，请在医生建议下使用。</div>
+            <div class="list-item">- 若使用盐酸氮卓斯汀滴眼液出现严重不适，请立即停止使用并联系医生。</div>
+            <div class="list-item">- 避免眼部过度疲劳，保持良好的用眼习惯。</div>
+        </div>
     </div>
-    <div class="content">
-        <div><span class="label">考试时间：</span><span class="value">2024年上半年</span></div>
-        <div><span class="label">资格名称：</span><span class="value">系统架构师</span></div>
-        <div><span class="label">准考证号：</span><span class="value">520103200305261627</span></div>
-        <div><span class="label">证件号：</span><span class="value">520103200305261627</span></div>
-        <div><span class="label">姓名：</span><span class="value">伍普桢彦</span></div>
-        <div><span class="label">上午成绩：</span><span class="value">54.00</span></div>
-        <div><span class="label">下午成绩：</span><span class="value">62.00</span></div>
-        <div><span class="label">论文成绩：</span><span class="value">53.00</span></div>
-    </div>
-    <div class="button-container">
-        <button onclick="window.history.back()">返回</button>
-    </div>
-</div>
-
 </body>
 </html>
