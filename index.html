@@ -5,26 +5,48 @@
     <title>医院病历单</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+        .iphone {
+            width: 375px;
+            margin: 50px auto;
+            border: 16px solid black;
+            border-top-width: 60px;
+            border-bottom-width: 60px;
+            border-radius: 36px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background: white;
+        }
+        .screen {
+            padding: 20px;
+        }
+        .status-bar {
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            background-color: #f0f0f5;
+            font-size: 12px;
+            color: #555;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
         }
         h1 {
             text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         .section {
             margin-bottom: 20px;
         }
         .section-title {
             font-weight: bold;
+            margin-bottom: 5px;
         }
         .list-item {
             margin-left: 20px;
@@ -32,38 +54,46 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>上海市第一人民医院病历单</h1>
-        <div class="section">
-            <div><span class="section-title">患者姓名：</span>伍普桢彦</div>
-            <div><span class="section-title">性别：</span>女</div>
-            <div><span class="section-title">年龄：</span>21</div>
-            <div><span class="section-title">病历编号：</span>520103200305261627</div>
-            <div><span class="section-title">就诊日期：</span>2024年6月5日</div>
+    <div class="iphone">
+        <div class="status-bar">
+            <div>9:41 AM</div>
+            <div>100% <span>🔋</span></div>
         </div>
-        <div class="section">
-            <div><span class="section-title">临床诊断：</span>结膜炎</div>
-        </div>
-        <div class="section">
-            <div><span class="section-title">执行科室：</span>眼科</div>
-        </div>
-        <div class="section">
-            <div class="section-title">处置：</div>
-            <div class="list-item">- 泪道冲洗</div>
-            <div class="list-item">- 表面麻醉</div>
-            <div class="list-item">- 泪小点扩张</div>
-        </div>
-        <div class="section">
-            <div class="section-title">处方药物：</div>
-            <div class="list-item">1. 受布霉素地塞米松眼膏</div>
-            <div class="list-item">2. 盐酸氮卓斯汀滴眼液</div>
-            <div class="list-item">3. 普拉洛芬滴眼液</div>
-        </div>
-        <div class="section">
-            <div class="section-title">注意事项：</div>
-            <div class="list-item">- 地塞米松是激素药物，请在医生建议下使用。</div>
-            <div class="list-item">- 若使用盐酸氮卓斯汀滴眼液出现严重不适，请立即停止使用并联系医生。</div>
-            <div class="list-item">- 避免眼部过度疲劳，保持良好的用眼习惯。</div>
+        <div class="screen">
+            <div class="container">
+                <h1>上海市第六人民医院病历单</h1>
+                <div class="section">
+                    <div><span class="section-title">患者姓名：</span>伍普桢彦</div>
+                    <div><span class="section-title">性别：</span>女</div>
+                    <div><span class="section-title">年龄：</span>21</div>
+                    <div><span class="section-title">病历编号：</span>520103200305261627</div>
+                    <div><span class="section-title">就诊日期：</span>2024年6月5日</div>
+                </div>
+                <div class="section">
+                    <div><span class="section-title">临床诊断：</span>结膜炎</div>
+                </div>
+                <div class="section">
+                    <div><span class="section-title">执行科室：</span>眼科</div>
+                </div>
+                <div class="section">
+                    <div class="section-title">处置：</div>
+                    <div class="list-item">- 泪道冲洗</div>
+                    <div class="list-item">- 表面麻醉</div>
+                    <div class="list-item">- 泪小点扩张</div>
+                </div>
+                <div class="section">
+                    <div class="section-title">处方药物：</div>
+                    <div class="list-item">1. 受布霉素地塞米松眼膏</div>
+                    <div class="list-item">2. 盐酸氮卓斯汀滴眼液</div>
+                    <div class="list-item">3. 普拉洛芬滴眼液</div>
+                </div>
+                <div class="section">
+                    <div class="section-title">注意事项：</div>
+                    <div class="list-item">- 地塞米松是激素药物，请在医生建议下使用。</div>
+                    <div class="list-item">- 若使用盐酸氮卓斯汀滴眼液出现严重不适，请立即停止使用并联系医生。</div>
+                    <div class="list-item">- 避免眼部过度疲劳，保持良好的用眼习惯。</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
